@@ -40,6 +40,8 @@ $(document).ready(function () {
         gifIndex = 0;
         $("#giphy-view").empty();
         $("#filter").empty();
+        $(".filterText").removeClass("d-none")
+        $("#filter").removeClass("d-none")
         //recreating the Show All filter button
 
         var spanShowAll = $("<span>")
@@ -48,7 +50,7 @@ $(document).ready(function () {
         // b.html(testRatingCount[z])
 
         var filtrShowAll = $("<button>")
-        filtrShowAll.addClass("btn btn-primary filter mr-1")
+        filtrShowAll.addClass("btn btn-primary filter mr-2")
         filtrShowAll.attr("type", "button")
         filtrShowAll.attr("rating", "none")
         filtrShowAll.html("Show All")
@@ -129,7 +131,7 @@ $(document).ready(function () {
                 b.html(testRatingCount[z])
 
                 var filtrBtn = $("<button>")
-                filtrBtn.addClass("btn btn-primary filter mr-1")
+                filtrBtn.addClass("btn btn-primary filter mr-2")
                 filtrBtn.attr("type", "button")
                 filtrBtn.attr("rating", testRating[z])
                 filtrBtn.html(testRating[z])
@@ -139,9 +141,6 @@ $(document).ready(function () {
                 filtrBtn.append(b)
                 $("#filter").append(filtrBtn);
             }
-
-
-
 
             for (var j = 0; j < rating.length; j++) {
                 var giphyDiv = $("<div class='giphy float-left'>");

@@ -4,3 +4,46 @@
 .hide{
     display: none;
 }
+
+body{
+    background-color: #94C5CC;
+    color: #ffffff;
+}
+
+.container{
+    background-color: #282C7D;
+    border: 10px solid #9FB1BC;
+}
+
+.jumbotron{
+    background-color: #CACECB;
+    border: 5px solid  #9FB1BC !important;
+}
+
+.buttonList{
+    background-color: #CACECB ;
+    border: 5px solid  #9FB1BC ;
+    
+    border-top-width: 0px;
+
+}
+
+.giphyBox{
+    background-color: #CACECB;
+    border: 5px solid  #9FB1BC;
+    /* border-right: 5px solid  #9FB1BC;
+    border-left: 5px solid  #9FB1BC;
+    border-bottom: 5px solid  #9FB1BC; */
+}
+
+.giphyAdd{
+    background-color: #CACECB;
+    border-right: 5px solid  #9FB1BC;
+    border-left: 5px solid  #9FB1BC;
+    border-top: 5px solid  #9FB1BC;
+}
+
+button{
+    background-color: #9FB1BC !important;
+    border-color:  #9FB1BC !important;
+}
