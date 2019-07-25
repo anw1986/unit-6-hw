@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap File -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Added link to the jQuery Library -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/588bfbb0a1.js"></script>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <title>Giphy</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="jumbotron text-center">
+
+            <h1>GifTastic</h1>
+        </div>
+
+        <!-- input box and filter buttons in this row -->
+        <div class="row">
+            <div class="col-2">
+                <div class="input-group mb-3 ">
+                    <input type="text" class="form-control" placeholder="Add Giphy" id="giphy-input">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button" id="add-giphy">Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-10" id="filter">
+                <!-- <button type="button" class="btn btn-primary filter mr-1" rating="none">
+                    Show All <span class="badge badge-light ml-2" id="filterResult"></span>
+                </button> -->
+                <!-- <button type="button" class="btn btn-primary ">
+                    Show All <span class="badge badge-light"></span>
+                </button> -->
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-2">
+                <div id="buttons-view"></div>
+            </div>
+
+            <div class="col-10">
+                <div id="giphy-view"></div>
+            </div>
+        </div>
+
+       
+        <!-- Rendered buttons will get dumped here  -->
+        <!-- <div id="buttons-view"></div> -->
+
+        <!-- <form id="giphy-form">
+            <label for="giphy-input">Add a Giphy!</label>
+            <input type="text" id="giphy-input">
+            <br> -->
+
+        <!-- Button triggers new movie to be added -->
+        <!-- <input id="add-giphy" type="submit" value="Add a GIPHY!">
+        </form> -->
+
+        <!-- giphy will get dumped Here -->
+        <!-- <div class="row ">
+            <div class="col-12">
+                <div id="giphy-view"></div>
+            </div>
+        </div> -->
+
+    </div>
+
+
+
+    <script src="./assets/javascript/game.js"></script>
+</body>
+
+</html>
