@@ -170,7 +170,7 @@ $(document).ready(function () {
     // click event the user clicks on the sill still image
     // class is added and removed to listen for additional clicks
     $(document).on("click", ".stillimage", function () {
-        alert("gif selected");
+        // alert("gif selected");
         $(this).removeClass("stillimage").addClass("restore")
         var gifAttr = $(this).attr("id")
         console.log("attribute of selected gif: " + gifAttr)
