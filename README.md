@@ -23,38 +23,7 @@ Every effort has been put in to design & capture user exceptions including
 
 The code has been thorougly checked but exceptions are always there. This HW has heavy uses of jquery dynamic element creations including filter buttons. 
 
-Classes have been indexed to provide ease of use for jquery. 
-
-'''
-  
-  $(document).on("click", ".filter", function () {
-        var filterAttr = $(this).attr("rating")
-        // remove class hide when any filter button is clicked
-        // defined a filter class hide in CSS
-        // .each() method used to loop through the image tags and check condition
-        $("img").each(function () {
-            $(this).removeClass("hide")
-        })
-        if (filterAttr == "none") {
-            console.log("show all selected")
-            $("img").each(function () {
-                $(this).removeClass("hide")
-            })
-        } else {
-            console.log("button selected: " + filterAttr)
-            $("img").each(function () {
-                var filterRating = $(this).attr("rating")
-                if (filterRating != filterAttr) {
-                    $(this).addClass("hide")
-                }
-            });
-        }
-
-    })
-
-'''
-
-In order to get unique elements and their counts in the rating array, it was converted into object and then the key-value pair was pushed into an array
+Classes have been indexed to provide ease of use for jquery. In order to get unique elements and their counts in the rating array, it was converted into object and then the key-value pair was pushed into an array
 
 '''
   
