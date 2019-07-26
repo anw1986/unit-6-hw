@@ -29,6 +29,7 @@ $(document).ready(function () {
         console.log(giphy);
         giphyAnimnal.push(giphy);
         console.log(giphyAnimnal)
+        $("#giphy-input").val("")
         renderButtons();
     })
 
